@@ -1,31 +1,31 @@
 class BoxShadowGenerator {
-    constructor(
-        horizontal, 
-        horizontalRef, 
-        vertical, 
-        verticalRef, 
-        blur, 
-        blurRef, 
-        spread, 
-        spreadRef,
-        previewBox,
-        rule,
-        webkitRule,
-        mozRule,    
-    ) {
-        this.horizontal = horizontal
-        this.horizontalRef = horizontalRef
-        this.vertical = vertical
-        this.verticalRef = verticalRef
-        this.blur = blur
-        this.blurRef = blurRef
-        this.spread = spread
-        this.spreadRef = spreadRef
-        this.previewBox = previewBox
-        this.rule = rule
-        this.webkitRule = webkitRule
-        this.mozRule = mozRule
-    }
+  constructor(
+    horizontal,
+    horizontalRef,
+    vertical,
+    verticalRef,
+    blur,
+    blurRef,
+    spread,
+    spreadRef,
+    previewBox,
+    rule,
+    webkitRule,
+    mozRule
+  ) {
+    this.horizontal = horizontal
+    this.horizontalRef = horizontalRef
+    this.vertical = vertical
+    this.verticalRef = verticalRef
+    this.blur = blur
+    this.blurRef = blurRef
+    this.spread = spread
+    this.spreadRef = spreadRef
+    this.previewBox = previewBox
+    this.rule = rule
+    this.webkitRule = webkitRule
+    this.mozRule = mozRule
+  }
 }
 
 // Seleção de elementos
@@ -40,25 +40,27 @@ const spreadRef = document.querySelector("#spread-value")
 
 const previewBox = document.querySelector("#box")
 
+
 const rule = document.querySelector("#rule span")
 const webkitRule = document.querySelector("#webkit-rule span")
 const mozRule = document.querySelector("#moz-rule span")
 
 const boxShadow = new BoxShadowGenerator(
-    horizontal, 
-        horizontalRef, 
-        vertical, 
-        verticalRef, 
-        blur, 
-        blurRef, 
-        spread, 
-        spreadRef,
-        previewBox,
-        rule,
-        webkitRule,
-        mozRule,    
-)
+  horizontal,
+  horizontalRef,
+  vertical,
+  verticalRef,
+  blur,
+  blurRef,
+  spread,
+  spreadRef,
+  previewBox,
+  rule,
+  webkitRule,
+  mozRule
+);
 
 console.log(boxShadow)
 
 // Eventos
+
