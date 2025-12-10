@@ -81,6 +81,17 @@ h2 {
     text-align: center;
 }
 
+/* Novas funcionalidades */
+#color-value {
+    min-width: 100px;
+}
+
+#inset {
+    align-self: start;
+    width: 20px;
+    height: 20px;
+}
+
 /* Preview */
 #box {
     width: 100%;
@@ -88,7 +99,7 @@ h2 {
     background-color: #e9d60a;
 }
 
-/* Geração */
+/* Área de geração */
 #generated-rule {
     text-align: center;
 }
@@ -103,4 +114,15 @@ h2 {
     margin: 0 auto;
     border: 2px solid #e9d60a;
     padding: 1rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#rules-area:hover {
+    background-color: #dfdfdf;
+}
+
+#copy-instructions {
+    font-style: italic;
+    margin-top: 1rem;
 }
